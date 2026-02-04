@@ -5,11 +5,13 @@ A simple Flask web application to search for recipes and view cooking steps.
 My project uses a simple rule-based AI system to analyze user input and suggest relevant recipes when an exact match is not found.  
 The AI works by applying decision rules and keyword matching to simulate intelligent recommendations.
 
+The application also uses REST APIs to fetch recipe data and provide AI-based suggestions.
+
 # Technologies Used
 - Python
 - Flask
 - HTML
 - CSS
+- REST API
 
-
-Link : https://recipe-finder-8xat.onrender.com
+link : https://recipe-finder-8xat.onrender.com
