@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>🍲 Recipe Finder</h1>
+
+    <form method="POST">
+        <input type="text" name="recipe" placeholder="Enter recipe name..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if result %}
+        <h2>Steps to make "{{ query }}"</h2>
+        <ul>
+            {% for step in result %}
+                <li>{{ step }}</li>
+            {% endfor %}
+        </ul>
+
+    {% elif ai_data %}
+        <h2>No recipe found for "{{ query }}"</h2>
+
+        {% if ai_data.suggestions %}
+            <p><strong>🤖 AI Suggestions:</strong></p>
+            <ul>
+                {% for item in ai_data.suggestions %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <p><strong>💡 AI Tip:</strong> {{ ai_data.tip }}</p>
+    {% endif %}
+</div>
+</body>
+</html>

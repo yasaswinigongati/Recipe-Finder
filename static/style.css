@@ -1,0 +1,92 @@
+/* -------- Global Page Style -------- */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* -------- Card Container -------- */
+.container {
+    width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* -------- Heading -------- */
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* -------- Form -------- */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input box */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+    background: #fafafa;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    background: #fff;
+}
+
+/* Button */
+button {
+    background: #6c63ff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #584ee7;
+}
+
+/* -------- Search Result Text -------- */
+h2 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* -------- List Items -------- */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+    background: #f7f7f7;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #444;
+    border-left: 3px solid #6c63ff;
+}
