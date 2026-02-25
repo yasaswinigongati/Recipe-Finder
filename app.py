@@ -3,8 +3,8 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 # ------------------ Recipe Data ------------------
+
 recipes = {
-    {
     "pasta": [
         "Boil water in a large pot and add salt",
         "Add pasta and cook for 8-12 minutes",
@@ -80,7 +80,6 @@ recipes = {
         "Chill for 30 minutes and serve",
         "You can do this recipe with custard powder."
     ]
-    }
 }
 
 # ------------------ Simple AI Logic ------------------
