@@ -77,7 +77,8 @@ recipes = {
         "Add sugar or honey if needed",
         "Add a few drops of lemon juice",
         "Mix gently",
-        "Chill for 30 minutes and serve"
+        "Chill for 30 minutes and serve",
+        "You can do this recipe with custard powder."
     ]
     }
 }
